@@ -1,0 +1,11 @@
+digest: 03ef1381
+name: dataset
+profile: '{"num_rows": 10000, "num_elements": 70000}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "Type", "required": true},
+  {"type": "double", "name": "Air temperature [K]", "required": true}, {"type": "double",
+  "name": "Process temperature [K]", "required": true}, {"type": "long", "name": "Rotational
+  speed [rpm]", "required": true}, {"type": "double", "name": "Torque [Nm]", "required":
+  true}, {"type": "long", "name": "Tool wear [min]", "required": true}, {"type": "long",
+  "name": "Machine failure", "required": true}]}'
+source: '{"url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00601/ai4i2020.csv"}'
+source_type: http

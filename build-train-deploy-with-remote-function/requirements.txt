@@ -1,0 +1,5 @@
+sagemaker==2.247.1
+s3fs
+scikit-learn==1.6.1
+mlflow==2.22.0
+sagemaker-mlflow==0.1.0

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/210929266694281795/1841d8780f894c38a87de0a1e46912cb/artifacts
+end_time: 1754228114046
+entry_point_name: ''
+experiment_id: '210929266694281795'
+lifecycle_stage: active
+run_id: 1841d8780f894c38a87de0a1e46912cb
+run_name: Preprocessing
+run_uuid: 1841d8780f894c38a87de0a1e46912cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754228113810
+status: 3
+tags: []
+user_id: MMNAD1

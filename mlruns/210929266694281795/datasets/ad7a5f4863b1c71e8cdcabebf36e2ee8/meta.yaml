@@ -1,0 +1,9 @@
+digest: 8b2f6061
+name: dataset
+profile: '{"features_shape": [7999, 8], "features_size": 63992, "features_nbytes":
+  255968}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float32\", \"shape\": [-1, 8]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "MMNAD1", "mlflow.source.name": "c:\\.venvs\\mlflow_venv\\lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
