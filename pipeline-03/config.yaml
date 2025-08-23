@@ -1,0 +1,28 @@
+
+SchemaVersion: '1.0'
+SageMaker:
+  PythonSDK:
+    Modules:
+      RemoteFunction:
+        # role arn is not required if in SageMaker Notebook instance or SageMaker Studio
+        # Uncomment the following line and replace with the right execution role if in a local IDE
+        RoleArn: arn:aws:iam::395435558728:role/SagemakerRole
+        S3RootUri: s3://sagemaker07272025/amzn
+        ImageUri: 395435558728.dkr.ecr.us-east-1.amazonaws.com/amzn-sagemaker-distribution-prod:latest
+        InstanceType: ml.m5.xlarge
+        Dependencies: ./requirements.txt
+        IncludeLocalWorkDir: true
+        # PreExecutionCommands:
+        # # Ensure CA certs package is installed
+        #   - "apt-get update && apt-get install -y ca-certificates"
+        #   - "export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt"
+        #   - "export AWS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt"
+        #   - "sudo chmod -R 777 /opt/ml/model"
+        CustomFileFilter:
+          IgnoreNamePatterns:
+          - "data/*"
+          - "models/*"
+          - "*.ipynb"
+          - "__pycache__"
+
+
